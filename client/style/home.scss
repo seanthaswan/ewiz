@@ -27,7 +27,7 @@
     grid-template-rows: 100px 150px 1fr 90px;
 
     img {
-      max-width: 60%;
+      max-width: 50%;
     }
 
     .project-info {
@@ -41,8 +41,6 @@
 
       img {
         padding: 5px 0px;
-        border: 3px dashed rgba(238, 238, 238, 0.1);
-        border-radius: 4px;
       }
     }
 
@@ -137,5 +135,24 @@
       minmax(75px, auto) /* Nav */
       1fr /* Content */
       minmax(75px, auto); /* Sidebar */
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+
+      .project-info {
+        margin: 0;
+        margin-top: 4px;
+      }
+
+      .nav-links {
+        flex-direction: initial;
+        margin: 0 auto;
+      }
+
+      .account-links {
+        flex-direction: initial;
+      }
+    }
   }
 }

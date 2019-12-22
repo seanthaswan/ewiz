@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./style/reset.scss";
+@import "./style/variables.scss";
+@import "./style/home.scss";
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+}

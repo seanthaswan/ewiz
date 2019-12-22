@@ -18,5 +18,8 @@
   "homepage": "https://github.com/seanthaswan/ewiz#readme",
   "devDependencies": {
     "sass": "^1.24.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
