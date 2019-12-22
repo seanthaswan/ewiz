@@ -1,10 +1,10 @@
 .container {
   /* ===============
-   CONTAINER-GRID SETTINGS 
+   CONTAINER-GRID SETTINGS
    =============== */
   display: grid;
 
-  grid-template-areas: 'nav side content content';
+  grid-template-areas: "nav side content content";
 
   grid-template-columns: auto auto 1fr;
   grid-template-rows: 1fr;
@@ -13,7 +13,7 @@
   box-shadow: inset 0px 11px 8px -10px #ccc;
 
   /* ===============
-   NAV SETTINGS 
+   NAV SETTINGS
    =============== */
 
   nav {
@@ -57,7 +57,7 @@
         width: 100%;
         padding: 5px 12px 1px 12px;
 
-        transition: all ease-in-out 0.2s;
+        transition: all ease-in-out 0.1s;
 
         &:hover {
           background: $darkgrey;
@@ -87,7 +87,7 @@
   }
 
   /* ===============
-   SIDE-SUBMENU SETTINGS 
+   SIDE-SUBMENU SETTINGS
    =============== */
 
   aside {
@@ -97,7 +97,7 @@
   }
 
   /* ===============
-   MAIN-CONTENT SETTINGS 
+   MAIN-CONTENT SETTINGS
    =============== */
 
   main {
@@ -107,7 +107,7 @@
   }
 
   /* ===============
-   FOOTER SETTINGS 
+   FOOTER SETTINGS
    =============== */
 
   footer {
@@ -121,20 +121,19 @@
   }
 
   /* ===============
-   MOBILE SETTINGS 
+   MOBILE SETTINGS
    =============== */
   @media (max-width: 768px) {
     grid-template-areas:
-      'nav'
-      'content'
-      'side';
+      "nav"
+      "side"
+      "content";
 
     grid-template-columns: 1fr;
     grid-template-rows:
       auto /* Header */
-      minmax(75px, auto) /* Nav */
-      1fr /* Content */
-      minmax(75px, auto); /* Sidebar */
+      auto /* Sidebar */
+      1fr; /* Content */
 
     nav {
       display: flex;
